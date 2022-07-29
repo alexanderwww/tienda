@@ -1,0 +1,584 @@
+html {
+    /* desplazamiento scrool  */
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--background-principal);
+    color: var(--color-texto);
+    font-family: 'Ubuntu', sans-serif;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+}
+
+
+
+
+
+:root{
+    --background-principal:#5900ff;
+
+    --color-texto: rgb(0, 0, 0);
+    --color-texto2: rgb(255, 255, 255);
+
+    --color-btn: #753eff;
+    --color-texto-btn:#fff;
+
+    --sombras:0px 10px 17px -3px rgba(0,0,0,0.2);
+}
+
+.section{
+    padding-left: 20vw;
+    padding-right: 20vw;
+    display: block;
+}
+
+.titulo{
+    font-size: 3rem;
+}
+.subtitulo{
+    font-size: 2rem;
+}
+
+.sub-subtitulo{
+    font-size: 1.2rem;
+}
+
+.btn-normales{
+    background-color: var(--color-btn);
+    padding: 1rem 1.3rem;
+    border-radius: 1.5rem;
+    text-decoration: none;
+    color: var(--color-texto-btn);
+    border: 0;
+    cursor: pointer;
+}
+
+.separador{
+    height: .1rem;
+    margin: 1rem 0;
+    background-color: rebeccapurple;
+}
+
+
+/* --------------------------------------------------------Header */
+.header-container{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+}
+
+.header-container.active{
+    box-shadow: 0px 2px 30px -1px rgba(0,0,0,0.5);
+}
+
+.header{
+
+    background-color: var(--background-principal); 
+    color: var(--color-texto2);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    top: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: bolder;
+    
+    width: 100%;
+    box-sizing: border-box;
+    position: static;
+    z-index: 1000;
+}
+
+.header .header-links{
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.header .header-links li a{
+    color: var(--color-texto2);
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+.header-logo i{
+    font-size: 1.5rem;
+}
+
+
+.header-icono{
+    display: none;
+}
+.header-icono-exit,
+.header-icono-menu{
+    font-size: 1.5rem;
+}
+
+
+.header-icono-exit{
+    display: none;
+}
+
+
+/* --------------------------------------------------------Footer */
+
+.footer{
+    /* background-color: rgb(0, 4, 255); */
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+
+.container-info-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-info-footer .info a{
+    color: var(--color-texto);
+    text-decoration: none;
+    padding-right: .5rem;
+}
+
+.container-info-footer .redes a{
+    text-decoration: none;    
+}
+
+.container-info-footer .redes i{
+
+    font-size: 1.3rem;
+    padding-left: .5rem;
+}
+
+.container-title-footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* --------------------------------------------------------Inicio */
+
+.inicio{
+    background-color: var(--background-principal);
+    width: 100%;
+    box-sizing: border-box;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.inicio div{
+    text-align: center;
+    color: var(--color-texto2);
+    font-size: 2rem;
+}
+
+.inicio a{
+    font-size: 1.5rem;
+}
+
+/* ------------------------------------Paginas Planes */
+
+
+.inicio-planes{
+    text-align: center;
+    min-height: 80vh;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+
+}
+
+.inicio-planes .container-titulo{
+    /* background-color: lawngreen; */
+
+    height: 20%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+
+.inicio-planes .container-planes{
+    /* background-color: antiquewhite; */
+
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inicio-planes .sub-container-planes{
+    /* background-color: rgb(0, 195, 255); */
+
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+
+
+.inicio-planes .planes-info{
+    background-color: rgb(255, 255, 255);
+    box-shadow: var(--sombras);
+
+    min-width: 200px;
+    position: relative;
+    padding: 2rem 4rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.inicio-planes .planes-info h4{
+    color: var(--color-texto2);
+    margin: 0;
+    margin-bottom: 2rem;
+
+    z-index: 10;
+    position: relative;
+}
+
+.inicio-planes .planes-info ul{
+    padding: 1.5rem 0rem;
+}
+
+.inicio-planes .planes-info ul li{
+    list-style: none;
+    padding: .5rem 0;
+}
+
+#svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+}
+
+/* ------------------------------------Info */
+
+.inicio-info .info-titulo{
+    text-align: center;
+}
+
+.inicio-info .info-box{
+    /* background-color: darkcyan; */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-top: 15rem;
+}
+
+.inicio-info .info-box img{
+    max-width: 30rem;
+}
+
+.inicio-info .info-text p{
+    font-size: 1.4rem;
+}
+
+.inicio-info .info-box-none{
+    display: none;
+}
+
+/* ---------------------------------------Testimonios */
+
+#inicio-testimonios{
+    padding-top: 5vh;
+}
+
+#container-carousel {
+    /* background-color: #753eff; */
+    display: flex;
+    justify-content: center;
+}
+
+/* ---- Container*/
+#carousel{
+    /* background-color: royalblue; */
+
+    /* Para que ocupe casi toda la screen  */
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+/* ---- Caja*/
+
+.carousel-caja{
+    /* background-color: rosybrown; */
+    /* padding: 1rem; */
+    /* border-radius: 1rem; */
+    /* es el tamaño de la img  */
+    width: 500px;
+
+}
+
+/* ------- Caja lista*/
+
+/* Es para la barra que aparece en Firebox  */
+.caja-lista{
+    overflow: hidden;
+}
+
+/* -------------Cja img */
+
+.caja-lista-img{
+    text-align: center;
+}
+
+.caja-lista-img p{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: .5rem;
+}
+
+.caja-lista-img img{
+    width: 500px;
+    height: 500px;
+}
+
+
+/* ------------------------------------Contacto */
+
+.inicio-contacto{
+    /* background-color: rgb(93, 112, 112); */
+    /* height: 100vh; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.form-contacto{
+    background-color: var(--background-principal);
+    box-shadow: var(--sombras);
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);    
+    gap: 1rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    max-width: 800px;
+    width: 700px;
+    color: var(--color-texto2);
+
+}
+
+.form-title,
+.form-grupo-btn,
+.form-grupo-mensage{
+    grid-column: span 2;
+}
+
+.form-title{
+    text-align: center;
+}
+
+.form-grupo .form-label{
+    padding: .5rem 0;
+    display: block;
+}
+
+.form-input{
+    padding: .5rem;
+    box-sizing: border-box;
+    border-radius: .5rem;
+    border: none;
+    outline: none;
+
+    width: 100%;
+}
+.form-input:focus{
+    outline: 3px solid var(--color-btn);
+}
+
+.form-grupo-mensage textarea{
+    resize: vertical;
+}
+
+.form-grupo-btn{
+    text-align: center;
+}
+/* --------------------------------------------------------Portafolio */
+
+.portafolio{
+    text-align: center;
+    /* centrar 'my Work' */
+    padding: 0 15vw;
+
+}
+
+.portafolio-container-logo{
+    display: flex;
+    font-size: 4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 15vw;
+}
+
+.portafolio-container-logo i{
+    padding: 1.5rem;
+}
+
+/* ------------------------------------Work */
+
+.portafolio-container-work .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,25rem);
+    grid-auto-flow: dense;
+    grid-gap: 1rem;
+    justify-content: center;
+}
+
+.portafolio-container-work .box{
+    position: relative;
+    border-radius: .5rem;
+    display: flex;
+}
+
+.portafolio-container-work .box-img{
+    width: 100%;
+    border-radius: inherit;
+}
+
+.portafolio-container-work .box-info{
+    background-color: rgb(34, 30, 30);
+    border-radius: inherit;
+    padding:0 2rem;
+    height: 100%;
+
+    position: absolute;
+    z-index: 1;
+    align-items: center;
+    display: none;
+}
+
+.portafolio-container-work .box:hover .box-info{
+    display: flex;
+}
+
+/* --------------------------------------------------------Responsive */
+
+@media screen and (max-width:1200px) {
+    .section{
+        padding-left:10vw;
+        padding-right: 10vw;  
+      }
+    body{
+        /* background-color: lawngreen; */
+    }
+    html{
+        font-size: 90%;
+    }
+    /* --------------------------------------------Header */
+    .header{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .header .header-links li a{
+        margin: 0;
+    }
+    .header .header-links li{
+        padding: .5rem 0;
+    }
+    .header .header-links{
+        flex-direction: column;
+        padding:2rem 0;
+    }
+
+    .header .header-links{
+        display: none;
+    }
+    .header .header-activo{
+        display: flex;
+    }
+
+    .header .header-desactivado{
+        display: none;
+    }
+    .header-icono{
+        display: flex;
+        position: absolute;
+        right: 0;
+        padding-right: 3rem;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:900px){
+
+    .form-contacto{
+        display: block;
+    }
+    .form-grupo-btn .btn-normales{
+        margin-top: 1rem;
+    }
+    .form-contacto{
+        width: 80%;
+        color: var(--color-texto2);
+    }
+
+    .inicio-info .info-box{
+        /* background-color: darkcyan; */
+        margin-top: 5rem;
+        gap: 1rem;
+    }
+    .inicio-info .info-box{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .info-box-none-responsive{
+        display: none !important;
+    }
+    .inicio-info .info-box img{
+        max-width: 25rem;
+
+    }
+
+
+    .carousel-caja{
+        width: 400px;
+    }
+    .caja-lista-img img{
+        width: 400px;
+        height: 400px;
+    }
+    
+
+}
+
+@media screen and (max-width:500px){
+    .section{
+        padding-left:7vw;
+        padding-right: 7vw;  
+      }
+
+    html{
+        font-size: 80%;
+    }
+
+
+    .carousel-caja{
+        width: 300px;
+    }
+    .caja-lista-img img{
+        width: 300px;
+        height: 300px;
+    }
+}
